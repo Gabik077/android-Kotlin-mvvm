@@ -24,4 +24,5 @@ This project include:
 - Firebase events
 - Firebase remote config
 - Proguard, Minify y Multidex
+- Multi-language configuration screen with xml design
 
