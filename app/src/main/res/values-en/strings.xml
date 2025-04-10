@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Curso Android Modulo 2</string>
+    <string name="txt_title_config">Config</string>
+    <string name="txt_idioma">Change language</string>
+    <string name="txt_espanol">Spanish</string>
+    <string name="txt_ingles">English</string>
+    <string name="btn_Guardar_config">Save</string>
+    <string name="btn_salir">Exit</string>
+    <string name="txt_menu_principal">Main Menu</string>
+    <string name="go_to_config">Configuracion</string>
+</resources>

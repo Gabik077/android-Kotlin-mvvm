@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "685229474678",
+    "project_id": "curso-android-2024",
+    "storage_bucket": "curso-android-2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685229474678:android:589ccc4b30b9f9b201b057",
+        "android_client_info": {
+          "package_name": "com.cursoandroidm2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAekbYvkP3N09IUEMYgr8Rqw34sF6y-dKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
