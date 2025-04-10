@@ -6,7 +6,6 @@ This project include:
 - MVVM
 - Jetpack Compose
 - Build variants and flavors
-- kotlin
 - Kotlin coroutines
 - Declarative & Reactive Programming
 -	Repository Pattern
