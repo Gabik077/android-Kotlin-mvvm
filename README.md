@@ -4,6 +4,7 @@ This project include:
 
 - Kotlin
 - MVVM
+- Retrofit
 - Jetpack Compose
 - Build variants and flavors
 - Kotlin coroutines
