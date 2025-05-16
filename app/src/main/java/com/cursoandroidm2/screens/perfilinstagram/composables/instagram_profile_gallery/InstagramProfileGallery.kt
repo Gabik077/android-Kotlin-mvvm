@@ -83,7 +83,7 @@ fun InstagramProfileGallery(
         //Grilla de fotos
         LazyVerticalGrid(
             columns = GridCells.Fixed(3),
-           // modifier = Modifier.weight(1f), // Ocupa todo el espacio disponible
+           // modifier = Modifier.weight(1f),
             contentPadding = PaddingValues(2.dp),
             verticalArrangement = Arrangement.spacedBy(2.dp),
             horizontalArrangement = Arrangement.spacedBy(2.dp)
