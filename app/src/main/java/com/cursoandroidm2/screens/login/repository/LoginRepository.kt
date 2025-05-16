@@ -13,13 +13,13 @@ class LoginRepository @Inject constructor(
         Log.d("LoginRepository", "Realizando login con datos: $loginModel")
 
        try {
-           val loginData = apiService.login(loginModel)//trae de db
+           //val loginData = apiService.login(loginModel)//trae de db
 
-           Log.d("LoginRepository", "Login exitoso: ${loginData.user_name} - ${loginData.status}")
-           return loginData.status == "ok" // retorna true o false
+          // Log.d("LoginRepository", "Login exitoso: ${loginData.user_name} - ${loginData.status}")
+           return true//loginData.status == "ok" // retorna true o false
 
        } catch (e: Exception) {
-           Log.d("AlbumRepository", "Error: ${e.message}")
+           Log.d("LoginRepository", "Error: ${e.message}")
            emptyList<AlbumModel>()
        }
 

@@ -21,10 +21,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.cursoandroidm2.screens.album.models.AlbumModel
 import com.cursoandroidm2.screens.album.viewmodel.AlbumViewModel
-import com.cursoandroidm2.screens.posts.models.PostModel
-import com.cursoandroidm2.screens.posts.viewmodel.PostViewModel
-import com.cursoandroidm2.screens.posts.views.composables.ItemPost
-import com.cursoandroidm2.screens.posts.views.composables.ListPostComposable
 
 
 @Composable

@@ -80,7 +80,7 @@ class UserViewModel @Inject constructor(private val userRepository: UserReposito
             try {
                 _userList.clear()
                 _userList.addAll(userRepository.getUsers())
-                Log.d("UserViewModel", "UserList: $_userList")
+                Log.d("UserViewModel", "UserList: ${_userList.size}")
             } catch (e: Exception) {
                 _userList.clear()
             }

@@ -16,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import com.cursoandroidm2.screens.album.views.AlbumScreen
 import com.cursoandroidm2.screens.firebase.formulario.view.FormularioScreen
 import com.cursoandroidm2.screens.firebase.view.FirebaseChatScreen
+import com.cursoandroidm2.screens.perfilinstagram.PerfilInstagramScreen
 import com.cursoandroidm2.screens.posts.views.composables.PostScreen
 import com.cursoandroidm2.screens.todo_list.views.ListaDeItems
 import com.cursoandroidm2.screens.users.viewmodel.UserViewModel
@@ -34,7 +35,7 @@ fun MainNavigation(viewModel: LoginViewModel,userviewModel: UserViewModel) {
             LoginInit(viewModel)
         }
         composable(route = "MainScreen") {
-            viewModel.showAppBar = true
+            viewModel.showAppBar = false
             MainScreen(navController)//composable de la pantalla principal
         }
 
@@ -43,24 +44,35 @@ fun MainNavigation(viewModel: LoginViewModel,userviewModel: UserViewModel) {
         }
 
         composable(route = "PostScreen"){
+            viewModel.showAppBar = false
             PostScreen(navController = navController)
         }
         composable(route = "AlbumScreen"){
+            viewModel.showAppBar = false
             AlbumScreen(navController = navController)
         }
         composable(route = "FirebaseChatScreen"){
+            viewModel.showAppBar = false
             FirebaseChatScreen()
         }
         composable(route = "FormularioFireStore"){
+            viewModel.showAppBar = false
             FormularioScreen()
         }
         composable(route = "UserScreen"){
+            viewModel.showAppBar = false
             UserScreen(navController)
         }
 
         composable(route = "AddUser"){
+            viewModel.showAppBar = true
             CreateUserScreen(navController,userviewModel)
         }
+        composable(route = "PerfilInstagram"){
+            viewModel.showAppBar = false
+            PerfilInstagramScreen()
+        }
+
         composable("EditUser/{userName}/{email}/{phone}/{address}/{password}/{name}/{lastName}/{id}") { backStackEntry ->
             val userName = backStackEntry.arguments?.getString("userName") ?: ""
             val email = backStackEntry.arguments?.getString("email") ?: ""

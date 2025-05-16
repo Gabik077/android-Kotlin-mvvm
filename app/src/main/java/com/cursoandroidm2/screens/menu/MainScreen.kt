@@ -74,7 +74,12 @@ fun MainScreen(navController: NavController) {
         }) {
             Text("Ir a Lista de Usuarios")
         }
-
+        Spacer(modifier = Modifier.height(16.dp))
+        Button(onClick = {
+            navController.navigate("PerfilInstagram")
+        }) {
+            Text("Ir a Perfil Instagram")
+        }
     }
 
 }

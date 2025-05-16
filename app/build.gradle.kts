@@ -62,7 +62,7 @@ android {
             dimension = "flavor"
             applicationId = "com.cursoandroidm2"
             versionName = "1.0-dev"
-            buildConfigField("String", "BASE_URL", "\"http://192.168.0.179:5002/\"")
+            buildConfigField("String", "BASE_URL", "\"http://192.168.100.124:5002/\"")
             buildConfigField("String", "API_KEY", "\"FASDFASDFASDFFDASFASDFA-FSADFADS\"")
         }
         create("prod") {
@@ -105,7 +105,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Navigation
     implementation(libs.androidx.navigation.compose)
+    //RETROFIT
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
@@ -130,7 +133,7 @@ dependencies {
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
 
-    //COIL
+    //COIL PARA DESCARGA DE IMAGENES
     implementation("io.coil-kt.coil3:coil-compose:3.0.4")
     implementation("io.coil-kt.coil3:coil-network-okhttp:3.0.4")
 
