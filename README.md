@@ -4,7 +4,7 @@ This project include:
 
 - Kotlin
 - MVVM
-- Retrofit
+- Retrofit Module
 - Jetpack Compose
 - Build variants and flavors
 - Kotlin coroutines
@@ -26,4 +26,5 @@ This project include:
 - Firebase remote config
 - Proguard, Minify y Multidex
 - Multi-language configuration screen with xml design
+- Instagram profile clone
 
